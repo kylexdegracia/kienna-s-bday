@@ -159,12 +159,12 @@ color:#e91e63;
 
 /* SPARKLES */
 
-.sparkles{
-position:absolute;
-width:100%;
-height:100%;
-opacity:0.25;
-animation:sparkleMove 30s linear infinite;
+.sparkles {
+position: absolute;
+width: 100%;
+height: 100%;
+background: none; /* Removes the broken sparkle image */
+opacity: 0;
 }
 
 @keyframes sparkleMove{
