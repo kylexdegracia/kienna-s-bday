@@ -511,7 +511,7 @@ position: fixed;
 width: 100%;
 height: 100%;
 /* If hearts still look like error tiles, replace the URL below or remove it */
-background: url("https://i.imgur.com/9Qx3P6T.png");
+background: none;
 opacity: .15;
 animation: floatHearts 30s linear infinite;
 pointer-events: none; /* Add this so it doesn't block clicks */
