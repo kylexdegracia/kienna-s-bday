@@ -3,7 +3,10 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#fff5f8 url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+background-image: url("images/hero-bg.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 overflow-x:hidden;
 }
 
