@@ -3,10 +3,7 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background-image: url("images/hero-bg.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+background:linear-gradient(180deg,#fff6fb,#f9faff);
 overflow-x:hidden;
 }
 
@@ -104,13 +101,23 @@ color:#ff77a9;
 .hero{
 text-align:center;
 padding:120px 20px;
-
-background-image:url("images/photo22.png");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-
 position:relative;
+background:url("images/photo22.png") center/cover no-repeat;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.65);
+}
+
+.hero *{
+position:relative;
+z-index:1;
 }
 
 .hero h1{
