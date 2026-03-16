@@ -7,6 +7,36 @@ background:linear-gradient(180deg,#fff6fb,#f9faff);
 overflow-x:hidden;
 }
 
+section{
+background-image:url("images/photo22.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+section{
+position:relative;
+}
+
+section::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.85);
+z-index:0;
+}
+
+section *{
+position:relative;
+z-index:1;
+}
+
+section{
+background-attachment:fixed;
+}
 
 /* MAIN CONTAINER */
 
@@ -24,7 +54,7 @@ overflow-x:hidden;
 /* 2. THE SECTION BACKGROUNDS */
 /* Giving the big sections a subtle horizontal pastel tint */
 #godparents, #details, #rsvp {
-    background: linear-gradient(to right, #ffffff, #fffafa, #ffffff);
+    background: none;
 }
 
 #dress-gift {
@@ -65,7 +95,7 @@ overflow-x:hidden;
 
 /* 5. CARD HOVER EFFECT */
 .godparent-card:hover, .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.02);
     background: #ffffff; /* Turns solid white on hover for clarity */
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
@@ -842,6 +872,8 @@ font-size:1.6rem;
 .navbar{
 gap:10px;
 font-size:13px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.9);
 }
 
 .carousel-img{
